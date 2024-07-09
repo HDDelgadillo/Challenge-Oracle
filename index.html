@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Encriptador de texto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="columna_izquierda">
+            <header>
+                <img src="img/logo.png" alt="Logo" class="logo">
+            </header>
+
+            <main>
+                <div class="caja_texto">
+                    <section>
+                        <textarea placeholder="Ingrese el texto aqui" class="espacio_escritura" onkeyup=(this.value)></textarea>
+                        <p><span>! </span> Sólo letras minúsculas y sin acentos</p>
+                    </section>
+                    <section class="caja_botones">
+                        <button type="button" class="boton_encriptar">Encriptar</button>
+                        <button type="button" class="boton_desencriptar">Desencriptar</button>
+                        <button type="button" class="boton_borrar">Reiniciar</button>
+                    </section>
+                </div>
+        </div>
+        <div class="columna_derecha">
+            <div class="caja_desencriptar">
+                <div id="message">
+                    <div class="no_encontrado">
+                        <img src="img/person.png" alt="Persona realizando una busqueda" class="message-image">
+                    </div>
+                    <h2 class="message-title">Ningun mensaje fue encontrado</h2>
+                    <p class="message-text">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div id="error">
+                    <h2 class="message-title">Mensaje incorrecto</h2>
+                    <p class="message-text">Recuerda que no estan permitidas letras mayúsculas, acento y/o
+                        caracteres especiales.</p>
+                </div>
+                <div id="response"></div>
+                <div id="boton_copiar">
+                    <button type="button" class="boton_copiar">Copiar</button>
+                </div>
+            </div>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <span>Aplicación diseñada por Hugo Delgadillo</span>
+       </footer>
+</body>
+
+</html>
+<script src="js/script.js"></script>
