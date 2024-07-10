@@ -45,7 +45,7 @@ function encriptar() {
 }
 
 function desencriptar() {
-  const encryptedMessage = document.querySelector(".text-area").value;
+  const encryptedMessage = document.querySelector(".espacio_escritura").value;
   const hasError = !textValidator(encryptedMessage);
 
   messageContainer.style.display = "none";
